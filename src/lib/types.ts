@@ -73,8 +73,8 @@ export interface HomeLink {
 }
 
 export interface HomePageParams extends PageParams {
-	name: string;
-	lastName: string;
+	name:string;
+	welcome: string;
 	description: string;
 	links: Array<HomeLink>;
 	skills?: Array<Skill>;

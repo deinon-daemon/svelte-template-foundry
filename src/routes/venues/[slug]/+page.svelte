@@ -19,7 +19,7 @@
 		display: string;
 		name: string;
 		img: string;
-		type: 'projects' | 'experience';
+		type: 'artists' | 'about';
 		url: string;
 	};
 
@@ -42,8 +42,8 @@
 					img: getAssetURL(item.logo),
 					display: `${item.name} (${item.type})`,
 					name: item.name,
-					type: 'projects',
-					url: `/projects/${item.slug}`
+					type: 'artists',
+					url: `/artists/${item.slug}`
 				});
 			}
 		});
@@ -53,8 +53,8 @@
 					img: getAssetURL(item.logo),
 					display: `${item.name} @ ${item.company}`,
 					name: item.name,
-					type: 'experience',
-					url: `/experience/${item.slug}`
+					type: 'about',
+					url: `/about/${item.slug}`
 				});
 			}
 		});

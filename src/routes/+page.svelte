@@ -8,7 +8,8 @@
 	import { useTitle } from '$lib/utils/helpers';
 	import { isBlank } from '@riadh-adrani/utils';
 
-	const { description, lastName, links, name, title, skills } = HOME;
+
+	const { description, welcome, links, title, skills } = HOME;
 
 	const isEmail = (email: string): boolean => {
 		const reg =
@@ -25,7 +26,7 @@
 	class="col self-center flex-1 md:flex-row md:slef-stretch justify-center lg:justify-between items-center p-y-0px p-x-10px"
 >
 	<div class="md:flex-1 gap-10px">
-		<MainTitle classes="md:text-left ">{name} {lastName},</MainTitle>
+		<MainTitle classes="md:text-left ">{welcome},</MainTitle>
 		<p class="text-[var(--tertiary-text)]  text-center md:text-left text-[1.2em] font-extralight">
 			{description}
 		</p>
