@@ -12,14 +12,15 @@ import {
 } from './types';
 import { Icons } from './utils';
 
-export const TITLE_SUFFIX = 'Slick template with Svelte';
+export const TITLE_SUFFIX = "Share art. Find venues. Break into the NYC art world.";
 
 export const NavBar = {
 	home: 'Home',
-	personal: 'Projects',
-	career: 'Experiences',
-	resume: 'Resume',
-	skills: 'Skills'
+	artists: 'Artists',
+	about: 'About Artigoh',
+	map: 'Mapping NYC\'s Art Scene',
+	venues: 'Venues',
+	sign_up: 'Sign Up'
 };
 
 export const getPlatfromIcon = (platform: Platform): Icons => {
@@ -42,11 +43,11 @@ export const getPlatfromIcon = (platform: Platform): Icons => {
 };
 
 export const HOME: HomePageParams = {
-	title: 'Home',
-	name: 'Name',
-	lastName: 'LASTNAME',
+	name: 'Artigoh',
+	title: 'Artigoh',
+	welcome: 'Welcome to Artigoh',
 	description:
-		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!',
+		'Build a free portfolio. Skip the gallery bottleneck. Find & get matched with venues to exhibit your art on your own terms. Sign up to become an early adopter of the best free portfolio platform in New York.',
 	links: [
 		{ platform: Platform.GitHub, link: 'https://github.com/' },
 		{
@@ -77,22 +78,22 @@ export const HOME: HomePageParams = {
 };
 
 export const PROJECTS: ProjectPageParams = {
-	title: 'Projects',
+	title: 'Artists',
 	items: MY_PROJECTS
 };
 
 export const EXPERIENCES: ExperiencePageParams = {
-	title: 'Experiences',
+	title: 'About Artigoh',
 	items: MY_EXPERIENCES
 };
 
 export const SKILLS: SkillsPageParams = {
-	title: 'Skills',
+	title: 'Venues',
 	items: MY_SKILLS
 };
 
 export const RESUME: ResumePageParams = {
-	title: 'Resumé',
+	title: "Mapping NYC's Art Scene",
 	item: ''
 };
 

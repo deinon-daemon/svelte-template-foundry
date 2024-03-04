@@ -1,10 +1,13 @@
 <script lang="ts">
+
+	export let id = '';
 	export let value = '';
 	export let placeholder = '';
 </script>
 
 <input
-	bind:value
+	id={id}
+	bind:this={value}
 	{placeholder}
 	class="text-[inherit] bg-transparent border-[1px] border-solid border-[var(--border)] px-[20px] py-[10px] rounded-[15px] flex-1 text-[1.15em] "
 />

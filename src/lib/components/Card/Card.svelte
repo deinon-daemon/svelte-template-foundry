@@ -60,14 +60,14 @@
 
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <svelte:element
-	this={href ? 'a' : 'div'}
-	{href}
-	bind:this={el}
-	on:mousemove={onHover}
-	class={`card text-inherit decoration-none inline-flex flex-col border-1px border-solid border-[var(--border)] rounded-15px duration relative ${classes.join(
+		this={href ? 'a' : 'div'}
+		{href}
+		bind:this={el}
+		on:mousemove={onHover}
+		class={`card text-inherit decoration-none inline-flex flex-col border-1px border-solid border-[var(--border)] rounded-15px duration relative ${classes.join(
 		' '
 	)}`}
-	style:bgColor={'red'}
+		style:bgColor={'red'}
 >
 	<div class="card-bg-img flex-1 flex flex-col p-25px rounded-15px">
 		<slot />
@@ -89,15 +89,15 @@
 		--rot-y: 0;
 
 		background: linear-gradient(90deg, var(--main) 0%, var(--main) 60%, var(--main-60) 100%),
-			no-repeat right 40% / 40% var(--bg-img);
+		no-repeat right 40% / 40% var(--bg-img);
 
 		&-bg-img {
 			&:hover {
 				background-color: var(--bg-color);
 				background-image: radial-gradient(
-					circle at var(--drop-x) var(--drop-y),
-					var(--drop-color),
-					transparent
+								circle at var(--drop-x) var(--drop-y),
+								var(--drop-color),
+								transparent
 				);
 			}
 		}

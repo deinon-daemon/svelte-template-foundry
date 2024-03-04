@@ -28,6 +28,7 @@
 
 	--code-string-light: #297a3a;
 	--code-string-dark: #62c073;
+	--dialog-prompt: #018519;
 
 	--code-function-light: #0068d6;
 	--code-function-dark: #52a8ff;
@@ -92,6 +93,7 @@ body {
 	--code-function: var(--code-function-dark);
 	--code-constant: var(--code-constant-dark);
 	--code-operator: var(--code-operator-dark);
+	--dialog-prompt: var(--dialog-prompt);
 	--link: var(--link-light);
 }
 
@@ -126,6 +128,7 @@ body {
 	--code-function: var(--code-function-light);
 	--code-constant: var(--code-constant-light);
 	--code-operator: var(--code-operator-light);
+	--dialog-prompt: var(--dialog-prompt);
 	--link: var(--link-dark);
 }
 

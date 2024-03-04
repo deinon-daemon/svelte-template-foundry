@@ -54,6 +54,8 @@ export interface Project extends Item {
 }
 
 export interface Experience extends Project {
+	title: string;
+
 	company: string;
 	location: string;
 	contract: ContractType;
@@ -73,8 +75,8 @@ export interface HomeLink {
 }
 
 export interface HomePageParams extends PageParams {
-	name: string;
-	lastName: string;
+	name:string;
+	welcome: string;
 	description: string;
 	links: Array<HomeLink>;
 	skills?: Array<Skill>;
