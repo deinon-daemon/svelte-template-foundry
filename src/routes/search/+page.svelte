@@ -17,7 +17,7 @@
 		data: T;
 		to: string;
 	};
-
+	export let data;
 	let query = '';
 	let mounted = false;
 	let result: Array<Item> = [];
@@ -66,6 +66,22 @@
 				name: `${data.name} @ ${data.company}`,
 				to: `experience/${data.slug}`
 			}))
+		);
+
+		// @ts-ignore
+		result.push(
+				...data?.events.filter(
+						(item) =>
+								query &&
+								(item.title.toLowerCase().includes(query.toLowerCase()) ||
+								item.text.toLowerCase().includes(query.toLowerCase()) ||
+								item.tags.split('|').join(', ').includes(query.toLowerCase())))
+				).map<Item>((datum) => ({
+				datum,
+				icon: 'i-carbon-ibm-cloud-event-notification',
+				name: `${datum.title} on ${data.date} @ ${data.local_time}`,
+				to: datum.event_link
+			})
 		);
 	}
 </script>

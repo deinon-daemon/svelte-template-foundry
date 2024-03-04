@@ -53,6 +53,17 @@ export interface Project extends Item {
 	skills: Array<Skill>;
 }
 
+export interface Event extends Item {
+	storage_link: string;
+	event_link: string;
+	color: string;
+	date: Date;
+	local_time: Number;
+	title: string;
+	text: string;
+	tags: Array<string>;
+}
+
 export interface Experience extends Project {
 	title: string;
 

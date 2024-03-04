@@ -3,6 +3,11 @@
 	import CommonPage from './CommonPage.svelte';
 	import Input from './Input/Input.svelte';
 	import { browser } from '$app/environment';
+	import {createQueryStore} from "$lib/store"
+
+	const filter0 = createQueryStore("q")
+	const filter1 = createQueryStore("filter1")
+
 
 	export let title = 'Title';
 	export let search = '';
@@ -41,7 +46,7 @@
 
 <CommonPage {title}>
 	<div class="w-100% row">
-		<Input bind:value={search} placeholder={'Search...'} />
+		<Input bind:value={$filter0} placeholder={'Search...'} />
 	</div>
 	<div class="w-100% col flex-1">
 		<slot />

@@ -1,6 +1,8 @@
 import MY_EXPERIENCES from './experiences.params';
 import MY_PROJECTS from './projects.params';
 import MY_SKILLS from './skills.params';
+import ALL_EVENTS from './events.params';
+
 import {
 	Platform,
 	type HomePageParams,
@@ -17,6 +19,7 @@ export const TITLE_SUFFIX = "Share art. Find venues. Break into the NYC art worl
 export const NavBar = {
 	home: 'Home',
 	artists: 'Artists',
+	events: 'Events',
 	about: 'About Artigoh',
 	map: 'Mapping NYC\'s Art Scene',
 	venues: 'Venues',
@@ -80,6 +83,11 @@ export const HOME: HomePageParams = {
 export const PROJECTS: ProjectPageParams = {
 	title: 'Artists',
 	items: MY_PROJECTS
+};
+
+export const EVENTS: ProjectPageParams = {
+	title: 'Events',
+	items: ALL_EVENTS
 };
 
 export const EXPERIENCES: ExperiencePageParams = {

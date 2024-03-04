@@ -59,12 +59,14 @@
 </script>
 
 <!-- svelte-ignore a11y-no-static-element-interactions -->
+<!-- decoration-none inline-flex flex-col border-1px border-solid border-[var(--border)] rounded-15px duration relative -->
 <svelte:element
 		this={href ? 'a' : 'div'}
 		{href}
+		target="_blank"
 		bind:this={el}
 		on:mousemove={onHover}
-		class={`card text-inherit decoration-none inline-flex flex-col border-1px border-solid border-[var(--border)] rounded-15px duration relative ${classes.join(
+		class={`card text-inherit  ${classes.join(
 		' '
 	)}`}
 		style:bgColor={'red'}

@@ -3,7 +3,12 @@
 	export let alt: string;
 	export let size = 50;
 	export let radius = '15px';
-	export let classes = '';
+	export let classes = [];
+
+    export let style = '';
 </script>
 
-<img class={`rounded-${radius} ${classes} aspect-square`} {src} {alt} height={size} width={size} />
+<img class={`${classes.join(
+		' '
+	)}`} {src} {alt} height={size} width={size} style={style} />
+

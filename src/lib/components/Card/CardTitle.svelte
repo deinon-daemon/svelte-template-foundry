@@ -1,4 +1,5 @@
 <script lang="ts">
+    import SvelteMarkdown from 'svelte-markdown'
 	export let title: string;
 </script>
 
