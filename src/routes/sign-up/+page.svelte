@@ -21,7 +21,7 @@
         container.style.background = `url(${gif}) center bottom`;
         // lmao "https://media.giphy.com/media/839DsJwSJTIo5kG6D5/giphy.gif"
         // also good https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExemdzNHpsNjh6dDlvb280bHVkYThuNHp3OTkwZTh4czhuOWNxN3I4NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qoJ9sZu2Xui9a/giphy.gif
-        container.style.width='70%';
+        container.style.width='100%';
     });
 
     const isEmail = (email) => {
@@ -47,7 +47,7 @@
 
 <div id="sign-up-container" class="flex flex-row flex-1 self-center justify-center">
 
-    <form class="flex flex-row flex-1 justify-center" on:submit|preventDefault={handleSubmit}>
+    <form class="flex flex-row flex-1 justify-center" on:submit|preventDefault={handleSubmit} style="margin-top:100px">
         <ul style='list-style:none;'>
             <li>
                 <h1 class="flex flex-row flex-1 self-center justify-center" style="margin-top:2%">Sign up for beta access</h1>

@@ -12,7 +12,7 @@ import {
 } from './types';
 import { Icons } from './utils';
 
-export const TITLE_SUFFIX = "Sign up. Show off. Find venues. Discover the NYC art world.";
+export const TITLE_SUFFIX = "Share art. Find venues. Break into the NYC art world.";
 
 export const NavBar = {
 	home: 'Home',
@@ -44,7 +44,7 @@ export const getPlatfromIcon = (platform: Platform): Icons => {
 
 export const HOME: HomePageParams = {
 	name: 'Artigoh',
-	title: 'Artigoh v0',
+	title: 'Artigoh',
 	welcome: 'Welcome to Artigoh',
 	description:
 		'Build a free portfolio. Skip the gallery bottleneck. Find & get matched with venues to exhibit your art on your own terms. Sign up to become an early adopter of the best free portfolio platform in New York.',

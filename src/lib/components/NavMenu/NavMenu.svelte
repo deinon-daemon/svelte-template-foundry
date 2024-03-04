@@ -18,10 +18,10 @@
 
 	const items = [
 		{ title: NavBar.sign_up, to: '/sign-up', icon: 'i-carbon-sigma'},
-		{ title: NavBar.artists, to: '/artists', icon: 'i-carbon-cube' },
-		{ title: NavBar.venues, to: '/venues', icon: 'i-carbon-software-resource-cluster' },
-		{ title: NavBar.about, to: '/about', icon: 'i-carbon-development' },
-		{ title: NavBar.map, to: '/map', icon: 'i-carbon-result' }
+		{ title: NavBar.artists, to: '/artists', icon: 'i-carbon-color-palette' },
+		{ title: NavBar.venues, to: '/venues', icon: 'i-carbon-store' },
+		{ title: NavBar.about, to: '/about', icon: 'i-carbon-logo-ansible-community' },
+		{ title: NavBar.map, to: '/map', icon: 'i-carbon-globe' }
 	];
 </script>
 
@@ -31,7 +31,7 @@
 			href={`${base}/`}
 			class="nav-menu-left decoration-none flex flex-row items-center cursor-pointer px-4 text-[var(--secondary-text)] self-stretch hover:bg-[color:var(--main-hover)]"
 		>
-			<UIcon icon="i-carbon-code" classes="text-2em" />
+			<UIcon icon="i-carbon-aperture" classes="text-2em" />
 			<span class="ml-2 text-md font-bold hidden md:inline">{HOME.name}</span>
 		</a>
 		<div class="flex flex-row flex-1 self-center justify-center">

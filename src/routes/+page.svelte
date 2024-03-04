@@ -5,7 +5,6 @@
 	import { TITLE_SUFFIX } from '$lib/params';
 	import { HOME, getPlatfromIcon } from '$lib/params';
 	import MY_SKILLS from '$lib/skills.params';
-	import { useTitle } from '$lib/utils/helpers';
 	import { isBlank } from '@riadh-adrani/utils';
 
 
@@ -20,7 +19,7 @@
 </script>
 
 <svelte:head>
-	<title>{useTitle(title, TITLE_SUFFIX)}</title>
+	<title>{title + " | " + TITLE_SUFFIX}</title>
 </svelte:head>
 <div
 	class="col self-center flex-1 md:flex-row md:slef-stretch justify-center lg:justify-between items-center p-y-0px p-x-10px"
@@ -30,18 +29,6 @@
 		<p class="text-[var(--tertiary-text)]  text-center md:text-left text-[1.2em] font-extralight">
 			{description}
 		</p>
-		<div class="row justify-center md:justify-start p-y-15px p-x-0px gap-2">
-			{#each links as link}
-				<a
-					class="decoration-none"
-					href={`${isEmail(link.link) ? 'mailto:' : ''}${link.link}`}
-					target="_blank"
-					rel="noreferrer"
-				>
-					<Icon icon={getPlatfromIcon(link.platform)} color={'var(--accent-text)'} size={'20px'} />
-				</a>
-			{/each}
-		</div>
 	</div>
 	<Carrousel items={skills ?? MY_SKILLS} />
 </div>

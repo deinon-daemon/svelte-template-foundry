@@ -54,6 +54,8 @@ export interface Project extends Item {
 }
 
 export interface Experience extends Project {
+	title: string;
+
 	company: string;
 	location: string;
 	contract: ContractType;
