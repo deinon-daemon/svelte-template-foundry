@@ -17,8 +17,6 @@
 
 	const { title } = PROJECTS;
 
-	const screenshots = data.project?.screenshots ?? [];
-
 	$: computedTitle = data.project ? `${data.project.name} - ${title}` : title;
 </script>
 
@@ -51,23 +49,6 @@
 							</Chip>
 						{/each}
 					</div>
-					<div class="row-center flex-wrap m-b-2">
-						{#each data.project.skills as item}
-							<Chip
-								classes="inline-flex flex-row items-center justify-center"
-								href={`${base}/skills/${item.slug}`}
-							>
-								<CardLogo
-									src={getAssetURL(item.logo)}
-									alt={item.name}
-									radius={'0px'}
-									size={15}
-									classes="mr-2"
-								/>
-								<span class="text-[0.9em]">{item.name}</span>
-							</Chip>
-						{/each}
-					</div>
 				</div>
 			</Banner>
 			<div class="pt-3 pb-1 overflow-x-hidden w-full">
@@ -84,23 +65,6 @@
 				<div class="w-100% m-t-8">
 					<CardDivider />
 				</div>
-				{#if screenshots.length > 0}
-					<div
-						class="px-10px grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-t-10 "
-					>
-						{#each screenshots as item}
-							<div class="col-center gap-3 overflow-hidden w-100% h-100% rounded-10px">
-								<img class="aspect-video w-100%" src={item.src} alt={item.label} />
-								<p class="text-[var(--tertiary-text)] font-300">{item.label}</p>
-							</div>
-						{/each}
-					</div>
-				{:else}
-					<div class="p-5 col-center gap-3 m-y-auto text-[var(--border)]">
-						<UIcon icon="i-carbon-image" classes="text-3.5em" />
-						<p class="font-300">No screenshots</p>
-					</div>
-				{/if}
 			</div>
 		</div>
 	{/if}

@@ -34,14 +34,24 @@
 			<Banner img={getAssetURL(data.experience.logo)}>
 				<div class="col-center p-y-20">
 					<div class="text-0.9em">
-						<MainTitle>{data.experience.name}</MainTitle>
+						<h3>{data.experience.name}</h3>
 					</div>
-					<p class="font-300 text-[var(--tertiary-text)] m-y-2 text-center">
-						{data.experience.company} · {data.experience.location} · {data.experience.type}
-					</p>
-					<p class="font-300 text-0.9em text-[var(--tertiary-text)] m-y-2 text-center">
-						{getTimeDiff(data.experience.period.from, data.experience.period.to)}
-					</p>
+					<div class="text-0.9em">
+						<p class="font-300 text-[var(--tertiary-text)] m-y-2 text-center">
+							{data.experience.role}
+						</p>
+						<p class="font-300 text-[var(--tertiary-text)] m-y-2 text-center">
+							{data.experience.location}
+						</p>
+						<p class="font-300 text-[var(--tertiary-text)] m-y-2 text-center">
+							{data.experience.type}
+						</p>
+					</div>
+					<div class="text-0.9em">
+						<p class="font-300 text-0.9em text-[var(--tertiary-text)] m-y-2 text-center">
+							{getTimeDiff(data.experience.period.from, data.experience.period.to)}
+						</p>
+					</div>
 					<div class="w-75%">
 						<CardDivider />
 					</div>

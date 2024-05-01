@@ -23,6 +23,10 @@ export const toggleTheme = (value?: boolean) =>
 			'style',
 			$v ? 'background: url("https://media.giphy.com/media/3o7btOfPKQb7mCLxBu/giphy.gif") center bottom; width:100%': 'background: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2QwYm1vaGNrbjBlMDNhcTJmMGp0N20xcTR4bnZ5dTlybmI3bDhqciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/D5Pol6qyMRnLGFkoVT/source.gif") center bottom; width: 100%;'
 		);
+		document.querySelector('div#cta-container')?.setAttribute(
+			'style',
+			$v ? 'background: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3NkcGNiNmpvYjE1aTJuZzJlejJ2MXIzeTdvZXFnd2h6NjN2NHRjcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rEgt2WXo1cZ4o6LAYR/source.gif") center bottom; width:100%': 'background: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXlrazY3N3h5Z2NzanJkMHVhMmJtNDlqemNtc2UzZW9nZXU2NXJhNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jHwklFMXUPnhuaYnQI/giphy.gif") center bottom; width: 100%;'
+		);
 		return $v;
 	});
 

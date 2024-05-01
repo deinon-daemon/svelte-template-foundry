@@ -11,7 +11,7 @@
     onMount(() => {
         const container = document.querySelector('div#sign-up-container');
         const theme = document.querySelector('html').getAttribute('data-theme');
-        console.log('Theme: ', theme);
+        //console.log('Theme: ', theme);
 
         if (theme !== 'dark') {
             gif = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2QwYm1vaGNrbjBlMDNhcTJmMGp0N20xcTR4bnZ5dTlybmI3bDhqciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/D5Pol6qyMRnLGFkoVT/source.gif";
@@ -37,9 +37,9 @@
 
     function handleSubmit(event) {
         console.log(event.target.email.value)
-        console.log(event.target.username.value)
+        //console.log(event.target.username.value)
         console.log(isEmail(event.target.email.value));
-        username = event.target.username.value;
+        //username = event.target.username.value;
         email = event.target.email.value;
     }
 
@@ -50,23 +50,11 @@
     <form class="flex flex-row flex-1 justify-center" on:submit|preventDefault={handleSubmit} style="margin-top:100px">
         <ul style='list-style:none;'>
             <li>
-                <h1 class="flex flex-row flex-1 self-center justify-center" style="margin-top:2%">Sign up for beta access</h1>
+                <h1 class="flex flex-row flex-1 self-center justify-center" style="margin-top:2%">Sign up for our newsletter!</h1>
             </li>
             <li>
                 <div class="flex flex-row flex-1 self-center justify-center" style="margin-top:5%">
                     <InputDialog id="email" placeholder="Email" ></InputDialog>
-                </div>
-            </li>
-
-            <li>
-                <div class="flex flex-row flex-1 self-center justify-center" style="margin-top:5%">
-                    <InputDialog id="username" placeholder="Username" ></InputDialog>
-                </div>
-            </li>
-
-            <li>
-                <div class="flex flex-row flex-1 self-center justify-center" style="margin-top:5%">
-                    <InputDialog id="motive" placeholder="Why would you like to use Artigoh?" ></InputDialog>
                 </div>
             </li>
 
@@ -77,9 +65,9 @@
             </li>
 
             <li>
-                {#if username && email}
+                {#if email}
                     <div class="flex flex-row flex-1 self-center justify-center" style="margin-top:2%">
-                        Hello {username}! Check your inbox @ {email} for a magic link to claim your free account and set up your profile.
+                        Thank you for your interest! Check your inbox {email} for a welcome email!
                     </div>
                 {/if}
             </li>

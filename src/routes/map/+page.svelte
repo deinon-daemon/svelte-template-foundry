@@ -14,7 +14,7 @@
 				<Chip size={'1.25em'}>Download</Chip>
 			</a>
 		{:else}
-			<Chip>Ooops! We're still mapping New York's Art Scene. . . 🎨 under construction 🎨</Chip>
+			<Chip>Ooops! We're still mapping our coverage of NYC . . 🎨 under construction 🎨</Chip>
 		{/if}
 	</div>
 	<div class="map-container">

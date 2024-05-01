@@ -18,8 +18,7 @@
 
 	const items = [
 		{ title: NavBar.sign_up, to: '/sign-up', icon: 'i-carbon-sigma'},
-		{ title: NavBar.artists, to: '/artists', icon: 'i-carbon-color-palette' },
-		{ title: NavBar.venues, to: '/venues', icon: 'i-carbon-store' },
+		{ title: NavBar.projects, to: '/projects', icon: 'i-carbon-color-palette' },
 		{ title: NavBar.about, to: '/about', icon: 'i-carbon-logo-ansible-community' },
 		{ title: NavBar.map, to: '/map', icon: 'i-carbon-globe' }
 	];

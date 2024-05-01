@@ -50,15 +50,12 @@ export interface Project extends Item {
 		to?: Date;
 	};
 	type: string;
-	skills: Array<Skill>;
 }
 
 export interface Experience extends Project {
-	title: string;
 
-	company: string;
+	role: string;
 	location: string;
-	contract: ContractType;
 }
 
 export interface PageParams {
