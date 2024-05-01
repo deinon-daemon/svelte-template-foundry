@@ -12,14 +12,13 @@ import {
 } from './types';
 import { Icons } from './utils';
 
-export const TITLE_SUFFIX = "Share art. Find venues. Break into the NYC art world.";
+export const TITLE_SUFFIX = "Write words more naked than flesh, stronger than bone, more resilient than sinew, sensitive than nerve...";
 
 export const NavBar = {
 	home: 'Home',
-	artists: 'Artists',
-	about: 'About Artigoh',
-	map: 'Mapping NYC\'s Art Scene',
-	venues: 'Venues',
+	projects: 'Projects',
+	about: 'About Us',
+	map: 'Media Map',
 	sign_up: 'Sign Up'
 };
 
@@ -43,11 +42,11 @@ export const getPlatfromIcon = (platform: Platform): Icons => {
 };
 
 export const HOME: HomePageParams = {
-	name: 'Artigoh',
-	title: 'Artigoh',
-	welcome: 'Welcome to Artigoh',
+	name: 'Sans Honte Press',
+	title: 'Sans Honte Press',
+	welcome: '/shamelessness/',
 	description:
-		'Build a free portfolio. Skip the gallery bottleneck. Find & get matched with venues to exhibit your art on your own terms. Sign up to become an early adopter of the best free portfolio platform in New York.',
+		"live coverage of proletarian action, unfiltered photojournalism, and commentary that aims to castrate the State's shameless abuse of power.",
 	links: [
 		{ platform: Platform.GitHub, link: 'https://github.com/' },
 		{
@@ -78,12 +77,12 @@ export const HOME: HomePageParams = {
 };
 
 export const PROJECTS: ProjectPageParams = {
-	title: 'Artists',
+	title: 'Projects',
 	items: MY_PROJECTS
 };
 
 export const EXPERIENCES: ExperiencePageParams = {
-	title: 'About Artigoh',
+	title: 'About Us',
 	items: MY_EXPERIENCES
 };
 
@@ -93,7 +92,7 @@ export const SKILLS: SkillsPageParams = {
 };
 
 export const RESUME: ResumePageParams = {
-	title: "Mapping NYC's Art Scene",
+	title: "Media Map",
 	item: ''
 };
 
